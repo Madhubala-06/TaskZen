@@ -45,7 +45,7 @@ const LandingPage: React.FC = () => {
       } flex flex-col`}
     >
       <Header theme={theme} toggleTheme={toggleTheme} />
-      <main className="flex-grow p-4 lg:p-8 pt-20">
+      <main className="flex-grow p-4 lg:p-8 pt-10 lg:pt-20">
         <div
           className={`rounded-md flex border-white w-full h-56 mb-10 ${
             theme === "dark"
@@ -59,7 +59,7 @@ const LandingPage: React.FC = () => {
                 theme === "dark" ? "text-violet-500" : "text-white"
               }`}
             >
-              HELLO MadhuBala!,
+              HELLO Buddy!,
             </h1>
             <p
               className={`text-xs sm:text-sm md:text-lg mt-4 w-4/5 text-white`}

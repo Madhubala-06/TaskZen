@@ -47,6 +47,7 @@ const TaskForm: React.FC<TaskFormProps> = ({
       status: initialTask ? initialTask.status : "pending",
     };
     onSubmit(task);
+    onCancel();
   };
 
   const priorityOptions = [
