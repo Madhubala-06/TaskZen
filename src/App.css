@@ -1,6 +1,130 @@
-main {
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply transition-colors duration-200;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-md transition-colors duration-200;
+  }
+  .btn-primary {
+    @apply bg-violet-600 text-white hover:bg-violet-700;
+  }
+}
+
+@layer utilities {
+  .dark {
+    @apply bg-gray-900 text-white;
+  }
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+}
+
+[data-theme='dark'] body {
+  @apply dark;
+}
+
+
+.button {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 4px;
+  background-color: transparent;
+  color: inherit; /* Ensure the text color inherits from parent */
+}
+
+.button::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #7c3aed;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.button:hover::after,
+.button.active::after {
+  width: 100%;
+  left: 0;
+}
+
+.button.active {
+  text-underline-offset: 1px; /* Add this to create some spacing for the underline */
+  /* Ensure it retains the color set by theme */
+}
+
+/* Additional specificity for light and dark theme colors */
+.button.text-violet-500 {
+  color: #7c3aed; /* Ensure this matches your light theme color */
+}
+
+.button.text-white {
+  color: #ffffff; /* Ensure this matches your dark theme color */
+}
+
+
+
+/* datepicker-custom.css */
+
+/* Dark theme styles */
+.react-datepicker-dark .react-datepicker {
+  background-color: #171717;
+  border-color: #404040;
+}
+
+.react-datepicker-dark .react-datepicker__header {
+  background-color: #262626;
+  border-bottom-color: #404040;
+}
+
+.react-datepicker-dark .react-datepicker__current-month,
+.react-datepicker-dark .react-datepicker__day-name,
+.react-datepicker-dark .react-datepicker__day {
+  color: #e5e5e5;
+}
+
+.react-datepicker-dark .react-datepicker__day:hover {
+  background-color: #404040;
+}
+
+.react-datepicker-dark .react-datepicker__day--selected,
+.react-datepicker-dark .react-datepicker__day--keyboard-selected {
+  background-color: #8b5cf6;
+  color: white;
+}
+
+/* Light theme styles */
+.react-datepicker-light .react-datepicker {
+  background-color: white;
+  border-color: #e5e5e5;
+}
+
+.react-datepicker-light .react-datepicker__header {
+  background-color: #f3f4f6;
+  border-bottom-color: #e5e5e5;
+}
+
+.react-datepicker-light .react-datepicker__current-month,
+.react-datepicker-light .react-datepicker__day-name,
+.react-datepicker-light .react-datepicker__day {
+  color: #8b5cf6;
+}
+
+.react-datepicker-light .react-datepicker__day:hover {
+  background-color: #f3f4f6;
+}
+
+.react-datepicker-light .react-datepicker__day--selected,
+.react-datepicker-light .react-datepicker__day--keyboard-selected {
+  background-color: #8b5cf6;
+  color: white;
+}

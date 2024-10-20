@@ -1,12 +1,16 @@
-import './App.css'
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import LandingPage from "./components/LandingPage";
 
-export default function App() {
+const App: React.FC = () => {
   return (
-    <main>
-      React ⚛️ + Vite ⚡ + Replit 🌀
-    </main>
-  )
-}
+    <Router>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+      </Routes>
+    </Router>
+  );
+};
 
-
-npx tailwindcss init -p
+export default App;
+git add .
