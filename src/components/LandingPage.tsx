@@ -71,7 +71,7 @@ const LandingPage: React.FC = () => {
             </p>
           </div>
           <img
-            src="public/banner2.png"
+            src="/banner2.png"
             alt="Banner"
             className="h-auto sm:w-56 hidden sm:block"
           />

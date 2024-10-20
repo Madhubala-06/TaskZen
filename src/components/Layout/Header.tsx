@@ -14,11 +14,7 @@ const Header: React.FC<HeaderProps> = ({ theme, toggleTheme }) => {
       <div className="flex justify-between gap-5 w-full">
         <a href="javascript:void(0)" className="flex gap-x-2">
           <img
-            src={
-              theme === "dark"
-                ? "public/logo-dark.png"
-                : "public/logo-light.png"
-            }
+            src={theme === "dark" ? "/logo-dark.png" : "/logo-light.png"}
             alt="logo"
             className="w-10 h-10 rounded-md"
           />
