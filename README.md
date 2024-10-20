@@ -1,15 +1,33 @@
-Running React on Replit
-React is a popular JavaScript library for building user interfaces.
+# To-Do List Dashboard
 
-Vite is a blazing fast frontend build tool that includes features like Hot Module Reloading (HMR), optimized builds, and TypeScript support out of the box.
+Welcome to the **To-Do List Dashboard**! This application helps users manage their tasks efficiently. Whether it's personal errands, work projects, or study notes, you can keep track of everything in one convenient location.
 
-Using the two in conjunction is one of the fastest ways to build a web app.
+## Features
 
-Getting Started
-Hit run
-Edit App.tsx and watch it live update!
-By default, Replit runs the dev script, but you can configure it by changing the run field in the configuration file. Here are the vite docs for serving production websites.
+- **Add Tasks**: Easily create new tasks with titles, descriptions, and due dates.
+- **Edit Tasks**: Modify existing tasks to update information or priorities.
+- **Delete Tasks**: Remove tasks that are completed or no longer needed.
+- **View Tasks**: See all your tasks at a glance, with clear indicators for pending and completed tasks.
+- **Task Status Tracking**: Visualize the number of pending and completed tasks using graphs.
+- **Responsive Design**: Access your dashboard from any device, whether it's a phone, tablet, or desktop.
 
-(You can also include any relevant content from the origin/main version here.)
+## Getting Started
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- [Node.js](https://nodejs.org/en/) (includes npm)
+- A code editor (e.g., [Visual Studio Code](https://code.visualstudio.com/))
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Madhubala-06/TaskZen.git
+
+
+
 
 
