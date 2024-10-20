@@ -13,4 +13,14 @@ const App: React.FC = () => {
 };
 
 export default App;
-git add .
+
+
+@github.com/Madhubala-06/TODO-Dashborad.git
+
+
+git remote set-url origin https://Madhubala-06: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
+
+
+
+@github.com/Madhubala-06/TODO-Dashborad.git
+
