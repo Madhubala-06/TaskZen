@@ -40,7 +40,7 @@ const PieChart: React.FC<PieChartProps> = ({
     responsive: true,
     plugins: {
       legend: {
-        position: "top",
+        position: "top" as const,
       },
       tooltip: {
         callbacks: {

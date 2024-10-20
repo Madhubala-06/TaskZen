@@ -14,3 +14,4 @@ const App: React.FC = () => {
 
 export default App;
 
+// git merge origin/main --allow-unrelated-histories
